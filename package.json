@@ -1,0 +1,39 @@
+{
+  "name": "FAC_guidebook",
+  "version": "1.0.0",
+  "description": "## User Stories",
+  "main": "server.js",
+  "scripts": {
+    "test": "node src/test/test_server.js | tap-spec && NODE_ENV=test node src/test/test_db.js | tap-spec",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-15/FAC_guidebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-15/FAC_guidebook/issues"
+  },
+  "homepage": "https://github.com/fac-15/FAC_guidebook#readme",
+  "devDependencies": {
+    "env2": "^2.2.2",
+    "nodemon": "^1.18.7",
+    "pg": "^7.7.1",
+    "supertest": "^3.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.3.1",
+    "crypto": "^1.0.1",
+    "env2": "^2.2.2",
+    "jsonwebtoken": "^8.4.0",
+    "pg": "^7.7.1",
+    "request": "^2.88.0",
+    "tape": "^4.9.1"
+  }
+}

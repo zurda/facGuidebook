@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add a recommendation</title>
+    <link rel="stylesheet" type="text/css" href="./sign-up.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+</head>
+<body>
+
+    <section id="form" title ="form">
+        <form action='/userSignUp' method='POST'>
+
+
+        <a href='/'><h1>FAC Guidebook to Finsbury park</h1></a>
+
+          <ul class="form-style-1" id='sign-up-form'>
+            <h2>Sign up</h2>
+
+            <li><label for ="name-of-user">Name</label><input pattern="^[^<>]+$" title='Text only' name='userName' type='text' id="name-of-user" class ="field-long" placeholder="Type your name here" required/> </li>
+            <li><label for ="password">Password<p id="pw-instructions">Must contain at least one number, one uppercase letter, and minimum of 8 characters</p></label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*[<>]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name='password' id ="password" class ="field-long" placeholder="Enter your password here" required/> </li>
+            <li><label for ="confirm-password">Confirm password</label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*[<>]).{8,}" title='Please do not match' name='confirm-password' id ="confirm-password" class ="field-long" placeholder="Please enter your password again" required/> </li>
+            <p id='error'>Passwords do not match</p>
+            <p id='success'>Log in successful! Bon Appétit!</p>
+
+            <li><input id="sign-up-submit" type="submit" value= "sign up"></li>
+          </ul>
+        </form>
+      </section>
+
+    <!-- <script type="text/javascript" src="./js/request.js"></script> -->
+    <script type="text/javascript" src="./js/validation.js"></script>
+
+</body>
+</html>

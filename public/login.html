@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add a recommendation</title>
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+</head>
+<body>
+
+    <section id="form" title ="form">
+        <form action='/userLogin' method='POST'>
+
+
+          <a href='/'><h1>FAC Guidebook to Finsbury park</h1></a>
+
+          <button onclick="window.location.href='./sign-up.html'" id="myButton" class="float-left submit-button" >sign up</button>
+
+          <ul class="form-style-1">
+            <h2>Login</h2>
+
+            <li><label for ="name-of-user">Name</label><input pattern="^[^<>]+$" name='userName' type='text' id="name-of-user" class ="field-long" placeholder="Type your name here" required/> </li>
+            <li><label for ="password">Password</label><input type="password" pattern="^[^<>]+$" name='password' id ="password" class ="field-long" placeholder="Enter your password here" required/> </li>
+            <li><input type="submit" id="login" value= "login"></li>
+          </ul>
+        </form>
+      </section>
+
+    <!-- <script type="text/javascript" src="./js/request.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/loginvalidation.js"></script> -->
+
+
+</body>
+</html>

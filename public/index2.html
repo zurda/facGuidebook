@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAC Guidebook</title>
+    <link rel="stylesheet" type="text/css" href="/public/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Text+Me+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <button id="logout" onclick="window.location.href='/userLogout'">log out</button>
+  <h1>FAC Guidebook to Finsbury park</h1>
+  <button onclick="window.location.href='/authenticate'" id="myButton" class="float-left submit-button" > add your own recommendation</button>
+  <h2>List of recommendations</h2>
+  <section id="recommendations">
+    <i class="fas fa-arrow-circle-left"></i>
+      <ul id="recsList">
+      </ul>
+      <i class="fas fa-arrow-circle-right"></i>
+  </section>
+    
+    <script type="text/javascript" src="/public/js/request.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+
+</body>
+</html>
